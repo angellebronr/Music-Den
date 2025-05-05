@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Music Den</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/music-notes.webp">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/Logo.png" alt="Logo" />
+        </div>
+    
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar instrumentos..." />
+            <button>🔍</button>
+        </div>
+    
+        <div class="navbar-icons">
+            <img src="images/usuario.png" alt="Login" id="loginBtn" />
+            <img src="images/carrito-de-compras.png" alt="Pedido" id="pedidoBtn" />
+        </div>
+    </header>
+    
+    <section class="slider">
+        <div class="slides">
+        <img src="images/1.jpg" class="slide active" alt="Slide 1" />
+        <img src="images/2.webp" class="slide" alt="Slide 2" />
+        <img src="images/3.webp" class="slide" alt="Slide 3" />
+    </div>
+    </section>
+
+        <section id="nues">
+            <h2>Nuestros Productos</h2>
+        </section>
+        <main class="productos">
+        <div class="producto" data-nombre="Guitarra Eléctrica">
+            <img src="images/guitarra.jpg" alt="Guitarra Eléctrica">
+            <h3>Guitarra Eléctrica</h3>
+        </div>
+        <div class="producto" data-nombre="Batería Acústica">
+            <img src="images/bateria.webp" alt="Batería Acústica">
+            <h3>Batería Acústica</h3>
+        </div>
+        <div class="producto" data-nombre="Piano Digital">
+            <img src="images/piano.webp" alt="Piano Digital">
+            <h3>Piano Digital</h3>
+        </div>
+        <div class="producto" data-nombre="Guira acústica">
+            <img src="images/Guira.jpg" alt="Guira acústica">
+            <h3>Guira acústica</h3>
+        </div>
+        <div class="producto" data-nombre="Acordeon">
+            <img src="images/Acordeon.jpg" alt="Acordeon">
+            <h3>Acordeon</h3>
+        </div>
+        <div class="producto" data-nombre="Violín">
+            <img src="images/violin.png" alt="Violín">
+            <h3>Violín</h3>
+        </div>
+        <div class="producto" data-nombre="Arpa">
+            <img src="images/arpa.jpeg" alt="Arpa">
+            <h3>Arpa</h3>
+        </div>
+        <div class="producto" data-nombre="Tambora">
+            <img src="images/Tambora Dominicana.jpg" alt="Tambora">
+            <h3>Tambora</h3>
+        </div>
+        <div class="producto" data-nombre="Bajo">
+            <img src="images/bajo.jpg" alt="Bajo">
+            <h3>Bajo</h3>
+        </div>
+        <div class="producto" data-nombre="Flauta">
+            <img src="images/flauta.jpg" alt="Flauta">
+            <h3>Flauta</h3>
+        </div>
+        <div class="producto" data-nombre="Conga">
+            <img src="images/Conga.jpeg" alt="Conga">
+            <h3>Conga</h3>
+        </div>
+        <div class="producto" data-nombre="Pandereta">
+            <img src="images/pandereta.jpeg" alt="Pandereta">
+            <h3>Pandereta</h3>
+        </div>
+    </main>
+    
+
+    <section class="formularios">
+        <div class="modal" id="loginModal">
+            <form>
+                <h2>Iniciar Sesión</h2>
+                <input type="text" placeholder="Usuario" required />
+                <input type="password" placeholder="Contraseña" required />
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <div class="modal" id="pedidoModal">
+            <form>
+                <h2>Hacer Pedido</h2>
+                <input type="text" placeholder="Nombre del artículo" required />
+                <input type="number" placeholder="Cantidad" required />
+                <input type="text" placeholder="Dirección" required />
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 The Music Den. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
